@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pathakunta Dedhan Reddy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: slideIn 1s ease-out;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        nav h3 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .links {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .links a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .links a:hover {
+            background-color: #34495e;
+            transform: scale(1.1);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+            animation: zoomIn 1.5s ease;
+        }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .hero img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .hero img:hover {
+            transform: scale(1.1);
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin: 20px 0;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #dcdde1;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 20px 10px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #00d4ff;
+        }
+
+        p, ul li {
+            font-size: 18px;
+            color: #ecf0f1;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .contact-item i {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+
+        .contact-item a {
+            text-decoration: none;
+            color: #00d4ff;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .contact-item a:hover {
+            color: #ff4d4d;
+            transform: scale(1.1);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+
+        .footer span {
+            color: #e74c3c;
+        }
+
+        @media (max-width: 768px) {
+            .links {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .links a {
+                width: 100%;
+            }
+
+            .hero img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav>
+        <h3>Dedhan Reddy</h3>
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <img src="ded.jpg" alt="Pathakunta Dedhan Reddy">
+        <h2>Hi, I am Pathakunta Dedhan Reddy</h2>
+        <p>
+            A passionate Front-End Developer, MERN Stack Developer, Video Creator, and Mentor. 
+            Excited to collaborate and create impactful solutions!
+        </p>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a web developer specializing in front-end and back-end technologies, as well as a video editor skilled in DaVinci Resolve.
+        </p>
+        <p>
+            Education: BTech in Computer Science & Engineering (AI and Data Science) - 3rd Year.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React.js, Node.js, MongoDB</li>
+            <li>Video Editing with DaVinci Resolve</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <strong>E-Commerce Website:</strong> 
+                Designed and developed a fully functional e-commerce website focusing on an intuitive and responsive user interface.
+                Used HTML, CSS, and JavaScript to create visually appealing layouts and smooth user interactions. 
+                <a href="https://shopnewbuddy.netlify.app/" target="_blank">View Project</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>
+                Founder of <strong>Come 2 Learn</strong> -Created and manage "Come 2 Learn," an edtech platform sharing insights on frontend and MERN full stack development.
+                Developed educational content simplifying web development concepts for a diverse learning audience.
+            </li>
+            <li>
+                Built an engaging community by sharing interactive and practical development resources.
+            </li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/pathakunta-dedhan-reddy" target="_blank">LinkedIn</a>
+        </div>
+        <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/DedhanReddy" target="_blank">GitHub</a>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:dedhanreddy3377@gmail.com">dedhanreddy3377@gmail.com</a>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+918309534820">+91 8309534820</a>
+        </div>
+    </section>
+
+    <div class="footer">
+        Built with <span>❤</span> by Pathakunta Dedhan Reddy © 2024
+    </div>
+</body>
+</html>
